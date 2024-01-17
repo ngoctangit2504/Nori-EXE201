@@ -2,11 +2,180 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Nori Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/css/botstrap_modified.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/responsive.css">
+    <title>Tiệm Cơm Nori - Onigiri Đà Nẵng</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
+<div class="header">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">🍙</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#menu">Menu Nori</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subscribe">Đóng góp ý kiến</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-success btn-block">Giỏ hàng <i class="fa fa-shopping-cart"> <span>(count)</span></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body">
+        <h1>Tiệm Cơm Nori</h1>
+        <div class="btn-team">
+            <button class="btn-white">Liên Hệ</button>
+            <a href="#menu">
+                <button class="btn-white rounded">Menu</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="discover" id="about">
+    <h2>Về <span class="text-danger">Dịch vụ </span> của chúng tôi</h2>
+    <p>Chào bạn! mình là Tiệm Cơm Nori - Cơm nắm Onigiri Đà Nẵng ✨</p>
+    <p>🍙 Nori có 7 vị cơm nắm và nhận đặt cơm trước 1 ngày, trong ngày trước 30 phút nha 🍙</p>
+    <img src="/images/backgroundnorifull.png" alt="Food">
+</div>
+<div class="divider"></div>
+<div class="topdishes" id="menu">
+    <h2>Các Vị <span class="text-danger">Được Chọn Nhiều Nhất  </span>Của Chúng tôi</h2>
+    <div class="row card-dishes">
+        <div class="col-md-3 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="login.html"><img
+                class="card-img-top" src="/images/bqqchiken.jpg" alt="Food Name">
+            <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">BBQ CHICKEN</h3>
+                <p>(Thịt Gà Sốt BBQ)</p>
+                <p>Giá</p>
+            </div>
+        </a></div>
+        <div class="col-md-3 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="login.html"><img
+                class="card-img-top" src="/images/eggandteriyaki.jpg" alt="Food Name">
+            <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">EGG</h3>
+                <p>(Trứng Ngâm Tương)</p>
+                <p>Giá</p>
+            </div>
+        </a></div>
+        <div class="col-md-3 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="login.html"><img
+                class="card-img-top" src="/images/spicybeff.jpg" alt="Food Name">
+            <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">SPICY BEEF</h3>
+                <p>(Thịt Bò Sốt Cay)</p>
+                <p>Giá</p>
+                <p></p>
+            </div>
+        </a></div>
+        <div class="col-md-3 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="login.html"><img
+                class="card-img-top" src="/images/eggandteriyaki.jpg" alt="Food Name">
+            <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">TERIYAKI CHICKEN</h3>
+                <p>(Thịt Gà Sốt Teriyaki)</p>
+                <p>Giá</p>
+            </div>
+        </a></div>
+        <div class="col-md-3 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="login.html"><img
+                class="card-img-top" src="/images/tunachill.jpg" alt="Food Name">
+            <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">TUNA CHILE</h3>
+                <p>(Cá Ngừ Sốt Ớt)</p>
+                <p>Giá</p>
+            </div>
+        </a></div>
+        <div class="col-md-3 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="login.html"><img
+                class="card-img-top" src="/images/tunamayo.jpg" alt="Food Name">
+            <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">TUNA MAYO</h3>
+                <p>(Cá Ngừ Mayonaise)</p>
+                <p>Giá</p>
+            </div>
+        </a></div>
+        <div class="col-md-3 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="login.html"><img
+                class="card-img-top" src="/images/Spam.jpg" alt="Food Name">
+            <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">SPAM EGG MAYO</h3>
+                <p>(Spam Trứng & Mayo)</p>
+                <p>Giá</p>
+            </div>
+        </a></div>
+    </div>
+</div>
+<div class="divider"></div>
+<div class="app" id="app">
+    <div class="left">
+        <h2>Giới thiệu ứng dụng Nori mới <br> của chúng tôi</h2>
+        <p>Ứng dụng sẽ được phát hành mới trên 2 nền tảng.</p>
+        <img src="/images/store.png" alt="download" class="downloadImg">
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="/images/backround%20nori%20app.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text"></p>
+        </div>
+    </div>
+</div>
+<div class="subscribe" id="subscribe">
+    <h2>Đóng góp <span class="text-danger">ý kiến </span> của bạn.</h2>
+    <div class="form">
+        <div class="input-group mb-3 newsletterForm">
+            <input type="text" class="form-control" placeholder="Email của bạn">
+            <button class="input-group-text btn btn-danger">Theo dõi</button>
+        </div>
+        Cơm nắm Onigiri <br>
+        🍙 42/24 Nguyễn Thành Hãn, ĐN <br>
+        🛵 6.30am - 5.00pm <br>
+        ☎️ 0965700799 - 0968120902
+    </div>
+</div>
+<div class="divider"></div>
+<div class="footer">
+    <footer>
+        © 2024 Cơm nắm Nori
+    </footer>
+</div>
+<script src="js/nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
